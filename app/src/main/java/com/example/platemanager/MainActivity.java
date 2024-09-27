@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
                                 Toast.makeText(MainActivity.this, "Login bem-sucedido!", Toast.LENGTH_SHORT).show();
                                 Intent intent = new Intent(MainActivity.this, HomeActivity.class);
                                 startActivity(intent);
-                                finish(); // Opcional: fecha a MainActivity
+                                finish(); 
                             });
                         } else {
                             String message = jsonResponse.getString("message");
